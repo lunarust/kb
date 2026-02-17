@@ -1,7 +1,6 @@
 #!/bin/bash
 #===============================================================================
-#         FILE: jstack_dump.sh
-#         FILE: clear_redis_cache.sh
+#         FILE: docker_jstack_dump.sh
 #       AUTHOR: Celine
 # ORGANIZATION: ---
 #      VERSION: 0.0.1

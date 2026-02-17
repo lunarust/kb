@@ -1,12 +1,19 @@
 #!/bin/bash
+#===============================================================================
+#         FILE: zabbix_maintenance.sh
+#       AUTHOR: Celine
+# ORGANIZATION: ---
+#      VERSION: 0.0.1
+#      CREATED:
+#  DESCRIPTION: Activate the maintenance window on zabbix for an environment.
+#               This will prevent multiple alerts to be sent while performing
+#               a scheduled maintenance 
+#===============================================================================
 
 #GET token
 echo "########## $1 ##########"
 MAINTID=8
 case "$1" in
-'TEST1')
-  MAINTID=5
-;;
 'DEMO1')
   MAINTID=6
 ;;
