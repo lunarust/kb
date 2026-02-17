@@ -13,6 +13,6 @@ min=$((TotalAcceptableNodes+1))
 echo "==== Total nodes online:: ${HEALTHNODE} > ${min} excluding myself ${MYIP} ===="
 if [[ ${HEALTHNODE} -lt ${min} ]] ; then
   # If we don't have enough healthy nodes, exit the script and throw a response code != 0
-  echo `date` "Stopping command, we don't have enough nodes up and available"  >> /var/log/pegasus/runstacklog/maintenance.html
+  echo `date` "Stopping command, we don't have enough nodes up and available"  >> /var/log/runstacklog/maintenance.html
   exit 599
 fi

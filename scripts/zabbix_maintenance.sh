@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #GET token
-# curl -s -X POST -H 'Content-Type: application/json-rpc' -d '{"jsonrpc":"2.0","method":"user.login","params": {"user":"zabbix_maintenance","password":"MAInT!ZAbbI@21"}, "id":1,"auth":null}' https://zabbix-mgmt.mifinity.com/api_jsonrpc.php
 echo "########## $1 ##########"
 MAINTID=8
 case "$1" in
