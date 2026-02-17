@@ -14,3 +14,6 @@ if [ $EUID != 0 ]
 fi
 
 rabbitmq-plugins enable rabbitmq_management rabbitmq_top rabbitmq_web_dispatch
+
+
+rabbitmqctl list_policies

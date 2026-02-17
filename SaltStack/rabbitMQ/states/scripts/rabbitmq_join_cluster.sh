@@ -16,3 +16,6 @@ fi
 rabbitmqctl stop_app
 rabbitmqctl join_cluster {{ salt['pillar.get']('rabbitmq_cluster_name') }}
 rabbitmqctl start_app
+
+
+rabbitmqctl cluster_status
